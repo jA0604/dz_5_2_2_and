@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_fil_ed">20dp</dimen>
+    <dimen name="margin_fil_btn">28dp</dimen>
+    <dimen name="font_size_ed">16sp</dimen>
+    <dimen name="min_width">300dp</dimen>
+</resources>

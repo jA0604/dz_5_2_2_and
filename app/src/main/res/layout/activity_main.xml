@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <EditText
+        android:id="@+id/ed_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minWidth="@dimen/min_width"
+        android:inputType="textPersonName"
+        android:hint="@string/str_ed_login"
+        android:textSize="@dimen/font_size_ed"
+        app:layout_constraintTop_toTopOf="@+id/gl_h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="82dp" />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_ed_password"
+        android:textSize="@dimen/font_size_ed"
+        android:ems="10"
+        android:minWidth="@dimen/min_width"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/ed_login"
+        app:layout_constraintStart_toStartOf="@+id/ed_login"
+        app:layout_constraintEnd_toEndOf="@+id/ed_login"
+        android:layout_marginTop="@dimen/margin_fil_ed"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_login"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/margin_fil_btn"
+        android:minWidth="@dimen/min_width"
+        android:background="@color/colorPrimaryLight"
+        app:layout_constraintEnd_toEndOf="@+id/ed_password"
+        app:layout_constraintStart_toStartOf="@+id/ed_password"
+        app:layout_constraintTop_toBottomOf="@+id/ed_password" />
+
+    <Button
+        android:id="@+id/btn_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_registration"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/margin_fil_btn"
+        android:minWidth="@dimen/min_width"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/ed_password"
+        app:layout_constraintStart_toStartOf="@+id/ed_password"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <CheckBox
+        android:id="@+id/chk_extend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_chk_extend"
+        app:layout_constraintEnd_toEndOf="@+id/ed_password"
+        app:layout_constraintStart_toStartOf="@+id/ed_password"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registration"
+        android:layout_marginTop="@dimen/margin_fil_btn"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
