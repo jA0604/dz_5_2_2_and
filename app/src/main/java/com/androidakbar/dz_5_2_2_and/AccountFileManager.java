@@ -14,12 +14,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class AccountFileManager {
-    //private String filename;
     private File file;
-
-//    public AccountFileManager(String filename) {
-//        this.filename = filename;
-//    }
 
     public AccountFileManager(File file) {
         this.file = file;
